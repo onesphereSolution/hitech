@@ -1,7 +1,7 @@
 body{
     background-color: #7f7f7f;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 .header{
     height: 100px;
@@ -36,19 +36,25 @@ nav{
 }
 .header .search-container input{
     font-size: 16px;
-    color: black;
+    color: white;
+    opacity: 0.4;
+    display: inline-block;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
     border-radius: 8px;
     border-color: #ff7200;
     border: none;
+    outline: #ff7200;
+    border-bottom: 2px #ff7200;
 }
 .header .search-container button{
     padding: 10px 20px 10px 20px;
     color: white;
+    left: -5px;
     background-color: #ff7200;
     font-size: 16px;
+    border-radius: 8px;
     border: none;
     margin-left: 0;
     cursor: pointer;
@@ -104,24 +110,35 @@ span{
     color: #ff7200;
     border-radius: 8px;
     font-weight: bold;
+    font-size: 16px;
     cursor: pointer;
 }
 .login-card #login-here:hover{
     transform: scale(1.1);
 }
 .login-card input{
-    border: none;
     border-bottom: 2px #ff7200;
-    opacity: 0.4;
-    padding-right: 50px;
+    padding-right: 30px;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: white;
+    padding-bottom: 10px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+    outline: none;
+    background-color: transparent;
 }
 .login-card h3, h5{
     font-weight: lighter;
+    font-size: 16px;
 }
 .login-card #login{
     padding: 5px 40px 5px 40px;
+    margin-top: 20px;
+    font-size: 16px;
     background-color: #ff7200;
     color: black;
     border-radius: 8px;
@@ -131,12 +148,15 @@ span{
 .login-card #login:hover{
     transform: scale(1.1);
 }
-.login-card .app-icons{
+.login-card .app-icons i{
     color: white;
     cursor: pointer;
-
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
 }
-.login-card .app-icons:hover{
+.login-card .app-icons i:hover{
     color: #ff7200;
 
 }
